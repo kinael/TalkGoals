@@ -12,27 +12,7 @@ function saveGoals(goals) {
 let goals = loadGoals();
 if (!goals) {
   goals = [
-    {
-      id: crypto.randomUUID(),
-      title: "Estudar",
-      category: "Estudos",
-      rewards: ["Jogar 2 horas"],
-      steps: [
-        { id: crypto.randomUUID(), text: "Pegar livro", done: true },
-        { id: crypto.randomUUID(), text: "Pesquisar assunto X", done: false },
-        { id: crypto.randomUUID(), text: "Resolver 5 exercícios", done: false }
-      ]
-    },
-    {
-      id: crypto.randomUUID(),
-      title: "Caminhar 30 min",
-      category: "Saúde",
-      rewards: ["Ver 1 episódio"],
-      steps: [
-        { id: crypto.randomUUID(), text: "Colocar tênis", done: false },
-        { id: crypto.randomUUID(), text: "Alongar", done: false }
-      ]
-    }
+    
   ];
   saveGoals(goals);
 }
